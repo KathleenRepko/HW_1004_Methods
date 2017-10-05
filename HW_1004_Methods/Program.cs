@@ -18,6 +18,15 @@ namespace HW_1004_Methods
             //The method should concatenate
             FavoriteFood("Maddie", "tofu stir-fry");
 
+            ////or, for user input:
+
+            //Console.WriteLine("Please enter a name.");
+            //string userName = Console.ReadLine();
+            //Console.WriteLine("Please enter the best food ever.");
+            //string favFood = Console.ReadLine();
+            //FavoriteFood(userName, favFood);
+
+
             //Create a method called RetirementCalculator.
             //It should take an int as a parameter representing the users age.
             //The method should calculate how many more years until the user retires using 65 as the age of retirement.
@@ -66,12 +75,17 @@ namespace HW_1004_Methods
 
         public static void FavoriteFood(string userName, string favFood)
         {
+
+            Console.WriteLine("***********************************"); //this just modified the method to make the output of the program more readable
             Console.WriteLine(userName + "'s favorite food is " + favFood + ".");
+            Console.WriteLine(); //modified method to make output more readable
         }
 
         public static void RetirementCalculator(int userAge)
         {
             int retirementAge = 65 - userAge;
+            ////or
+            //int retirementAge = Math.Max(0, 65 - userAge); //picks the larger of the values - so, if user is 70...
             Console.WriteLine("The user will retire in " + retirementAge + " years.");
         }
 
@@ -81,7 +95,7 @@ namespace HW_1004_Methods
 
             return monthlyWages;
         }
-        
+      
         public static string SayHello(string name)
         {
             string sayHello = ("Hello, " + name + "!");
