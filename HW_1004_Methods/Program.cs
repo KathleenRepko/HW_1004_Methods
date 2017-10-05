@@ -42,8 +42,7 @@ namespace HW_1004_Methods
             //Once it calculates the monthly wage it should
 
             double monthlyWages = WageCalculator(25.25, 10.00);
-            Console.WriteLine("Your total monthly wages are $" + monthlyWages + "."); //How to print 2 decimal places?
-
+            Console.WriteLine("Your total monthly wages are $" + String.Format("{0:0.00}", monthlyWages) + "."); //How to print 2 decimal places?
             //Create two methods of your choosing. At least one of the methods should have a non-void return type.
             //Both of the methods should take at least one parameter
             //Remember when naming your method that it should represent what your method should do.
